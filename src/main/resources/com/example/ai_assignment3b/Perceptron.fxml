@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ai_assignment3b.PartIIController">
+   <children>
+      <Button layoutX="60.0" layoutY="36.0" mnemonicParsing="false" onAction="#onTrainingBtn" prefHeight="34.0" prefWidth="135.0" text="Start Training" />
+      <Button fx:id="startTestingBtn" layoutX="60.0" layoutY="108.0" mnemonicParsing="false" onAction="#onTestingBtn" prefHeight="34.0" prefWidth="135.0" text="Start Testing" />
+      <Button layoutX="599.0" layoutY="497.0" mnemonicParsing="false" onAction="#onExitBtn" prefHeight="34.0" prefWidth="87.0" text="Exit" />
+      <TextFlow fx:id="finalResult" layoutX="33.0" layoutY="235.0" prefHeight="306.0" prefWidth="410.0" visible="false" />
+      <Label fx:id="resultLbl" layoutX="32.0" layoutY="182.0" prefHeight="47.0" prefWidth="315.0" wrapText="true" />
+      <Group fx:id="usersData" disable="true" layoutX="362.0" layoutY="26.0">
+         <children>
+            <Label layoutX="121.0" text="Input your data:" />
+            <TextField fx:id="temperatureTextField" layoutX="173.0" layoutY="36.0" prefHeight="34.0" prefWidth="135.0" promptText="Input temperature" />
+            <TextField fx:id="windSpeedTextField" layoutX="173.0" layoutY="81.0" prefHeight="34.0" prefWidth="135.0" promptText="Input wind speed" />
+            <TextField fx:id="outlookTextField" layoutX="173.0" layoutY="125.0" prefHeight="34.0" prefWidth="135.0" promptText="Input outlook" />
+            <TextField fx:id="precipitationTextField" layoutX="173.0" layoutY="172.0" prefHeight="34.0" prefWidth="135.0" promptText="Input precipitation" />
+            <Label layoutY="45.0" text="Temperature in Fahrenheit" />
+            <Label layoutX="3.0" layoutY="90.0" text="Wind speed (mph)" />
+            <Label layoutX="3.0" layoutY="125.0" prefHeight="34.0" prefWidth="166.0" text="Outlook: -1 (sunny), 0 (mostly cloudy), or 1 (overcast)" wrapText="true" />
+            <Button fx:id="predictBtn" layoutX="112.0" layoutY="233.0" mnemonicParsing="false" onAction="#onPredictBtn" prefHeight="34.0" prefWidth="87.0" text="Predict" />
+            <Label layoutX="3.0" layoutY="181.0" text="Precipitation: 1 - Yes, -1 - No" />
+         </children>
+      </Group>
+   </children>
+</Pane>
